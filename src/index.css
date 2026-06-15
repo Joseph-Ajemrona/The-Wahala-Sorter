@@ -3,29 +3,40 @@
   --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
 
   /* Theme variables - Vibrant Violet theme (Light Mode) */
-  --bg-app: #f4f3ff;          /* Soft violet-tinted off-white */
-  --bg-card: #ffffff;         /* Pure white */
-  --text-primary: #1e1b4b;    /* Very dark violet-indigo */
-  --text-secondary: #4f46e5;  /* Rich Indigo */
-  --text-muted: #8280a9;      /* Muted violet-gray */
-  --border-color: #e0dbff;    /* Soft violet border */
-  --border-focus: #7c3aed;    /* Vibrant violet focus */
+  --bg-app: #f4f3ff;
+  /* Soft violet-tinted off-white */
+  --bg-card: #ffffff;
+  /* Pure white */
+  --text-primary: #1e1b4b;
+  /* Very dark violet-indigo */
+  --text-secondary: #4f46e5;
+  /* Rich Indigo */
+  --text-muted: #8280a9;
+  /* Muted violet-gray */
+  --border-color: #e0dbff;
+  /* Soft violet border */
+  --border-focus: #7c3aed;
+  /* Vibrant violet focus */
 
   /* Column Flat Accents */
-  --accent-now: #ec4899;      /* Soft neon pink */
+  --accent-now: #ec4899;
+  /* Soft neon pink */
   --bg-now: #fdf2f8;
   --border-now: #fbcfe8;
 
-  --accent-soon: #f59e0b;     /* Deep warm amber */
+  --accent-soon: #f59e0b;
+  /* Deep warm amber */
   --bg-soon: #fef3c7;
   --border-soon: #fde68a;
 
-  --accent-later: #10b981;    /* Vibrant Emerald */
+  --accent-later: #10b981;
+  /* Vibrant Emerald */
   --bg-later: #ecfdf5;
   --border-later: #a7f3d0;
 
   /* Primary Violet accents */
-  --primary-violet: #5e17eb;  /* Deep royal violet */
+  --primary-violet: #5e17eb;
+  /* Deep royal violet */
   --primary-violet-dark: #450aab;
   --primary-violet-bg: #f3e8ff;
   --primary-violet-border: #e9d5ff;
@@ -45,12 +56,18 @@
 /* Dark Mode variables applied to root via media query (if not explicitly overridden to light) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg-app: #080616;          /* Deep dark purple-indigo */
-    --bg-card: #121026;         /* Midnight violet card */
-    --text-primary: #f5f3ff;    /* Pure lilac-white text */
-    --text-secondary: #a78bfa;  /* Light purple-violet */
-    --text-muted: #5b587e;      /* Deep muted purple-gray */
-    --border-color: #241f46;    /* Dark violet border */
+    --bg-app: #080616;
+    /* Deep dark purple-indigo */
+    --bg-card: #121026;
+    /* Midnight violet card */
+    --text-primary: #f5f3ff;
+    /* Pure lilac-white text */
+    --text-secondary: #a78bfa;
+    /* Light purple-violet */
+    --text-muted: #5b587e;
+    /* Deep muted purple-gray */
+    --border-color: #241f46;
+    /* Dark violet border */
     --border-focus: #a78bfa;
 
     --bg-now: rgba(236, 72, 153, 0.12);
@@ -73,12 +90,18 @@
 /* Explicit manual Dark Mode override */
 :root[data-theme='dark'],
 .dark {
-  --bg-app: #080616;          /* Deep dark purple-indigo */
-  --bg-card: #121026;         /* Midnight violet card */
-  --text-primary: #f5f3ff;    /* Pure lilac-white text */
-  --text-secondary: #a78bfa;  /* Light purple-violet */
-  --text-muted: #5b587e;      /* Deep muted purple-gray */
-  --border-color: #241f46;    /* Dark violet border */
+  --bg-app: #080616;
+  /* Deep dark purple-indigo */
+  --bg-card: #121026;
+  /* Midnight violet card */
+  --text-primary: #f5f3ff;
+  /* Pure lilac-white text */
+  --text-secondary: #a78bfa;
+  /* Light purple-violet */
+  --text-muted: #5b587e;
+  /* Deep muted purple-gray */
+  --border-color: #241f46;
+  /* Dark violet border */
   --border-focus: #a78bfa;
 
   --bg-now: rgba(236, 72, 153, 0.12);
@@ -124,10 +147,10 @@ body,
 .empty-state,
 .logo-badge,
 header {
-  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Dropdown option coloring helper in dark mode */
@@ -147,7 +170,8 @@ header {
 
 /* Header - Styled as a majestic card matching the board width */
 .header {
-  position: relative; /* Enables precise absolute child positioning */
+  position: relative;
+  /* Enables precise absolute child positioning */
   width: 100%;
   background: linear-gradient(135deg, var(--primary-violet) 0%, var(--primary-violet-dark) 100%);
   color: #ffffff;
@@ -179,10 +203,10 @@ header {
   justify-content: center;
   outline: none;
   box-shadow: var(--shadow-inset);
-  transition: transform var(--transition-smooth), 
-              background-color var(--transition-smooth), 
-              border-color var(--transition-smooth),
-              box-shadow var(--transition-smooth);
+  transition: transform var(--transition-smooth),
+    background-color var(--transition-smooth),
+    border-color var(--transition-smooth),
+    box-shadow var(--transition-smooth);
 }
 
 .theme-toggle-btn:hover {
@@ -431,9 +455,17 @@ header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.column-now .column-indicator { background-color: var(--accent-now); }
-.column-soon .column-indicator { background-color: var(--accent-soon); }
-.column-later .column-indicator { background-color: var(--accent-later); }
+.column-now .column-indicator {
+  background-color: var(--accent-now);
+}
+
+.column-soon .column-indicator {
+  background-color: var(--accent-soon);
+}
+
+.column-later .column-indicator {
+  background-color: var(--accent-later);
+}
 
 .column-title-text {
   display: flex;
@@ -615,6 +647,7 @@ header {
     opacity: 0;
     transform: scale(0.94);
   }
+
   to {
     opacity: 1;
     transform: scale(1);

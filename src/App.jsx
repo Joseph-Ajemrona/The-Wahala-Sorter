@@ -38,12 +38,12 @@ const TRANSLATIONS = {
   optionNow: 'Now',
   optionSoon: 'Soon',
   optionLater: 'Later',
-  btnSubmit: 'Add to Board ⚡',
-  emptyIcon: '🎉',
+  btnSubmit: 'Add to Board',
+  emptyIcon: '',
   emptyText: 'No wahala here!',
   deleteTaskLabel: 'Delete Task',
   deleteBtnChar: '✕',
-  timeIcon: '🕒'
+  timeIcon: ''
 }
 
 function App() {
